@@ -1,0 +1,178 @@
+:root {
+  /* Custom Colors based on the image's dark theme */
+  --luxury-dark-blue: #09172f;
+  --luxury-gold: #c7a47e;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #fff;
+}
+
+.site-navbar {
+  background-color: var(--luxury-dark-blue);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #fff !important;
+}
+.nav-link {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+.nav-link.active,
+.nav-link:hover {
+  color: #fff !important;
+}
+
+/* --- Hero Section Styling --- */
+.hero-section {
+  height: 100vh; 
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://picsum.photos/1080/1080?random=1") no-repeat center
+      center/cover;
+  position: relative;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+}
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.hero-subtitle {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  font-weight: 700;
+  color: var(--luxury-gold);
+  text-transform: uppercase;
+}
+.hero-scroll-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--luxury-gold);
+  color: var(--luxury-dark-blue);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Facilities Card Styling --- */
+.facility-card {
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.facility-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.facility-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  transition: background-color 0.3s ease;
+}
+.facility-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding: 5px 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid var(--luxury-gold);
+}
+/* ფერის ცვლილება ფოტოებზე */
+.facility-card:hover .facility-overlay {
+  background-color: rgba(0, 0, 0, 0.1); 
+}
+
+/* --- General Content Styling --- */
+.section-heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--luxury-dark-blue);
+  position: relative;
+}
+
+/*  (Bottom of page) --- */
+.testimonial-small {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--luxury-dark-blue);
+}
+.testimonial-small p {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+.testimonial-small .bi-star-fill {
+  color: var(--luxury-gold);
+  font-size: 1.25rem;
+}
+
+/* --- Footer --- */
+.site-footer {
+  background-color: var(--luxury-dark-blue);
+  color: #fff;
+  padding: 3rem 0;
+}
+.footer-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.footer-links li a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links li a:hover {
+  color: #fff;
+}
+.social-links a {
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+.btn-subscribe {
+  background-color: var(--luxury-gold);
+  color: #fff;
+  border: none;
+}
+.btn-subscribe:hover {
+  background-color: #a3856d; /* Darker gold on hover */
+  color: #fff;
+}
