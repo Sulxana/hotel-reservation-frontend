@@ -1,0 +1,188 @@
+/* Google Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+    --brand-tan: #C4B086;
+    --brand-dark-blue: #212C46;
+    --text-color-primary: #333;
+    --text-color-secondary: #777;
+    --background-light: #F8F9FA;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color-primary);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+.site-navbar {
+    background-color: var(--brand-dark-blue);
+    padding: 0.75rem 0;
+}
+.navbar-brand {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem !important;
+}
+.nav-link:hover, .nav-link.active {
+    color: white;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    min-height: 400px;
+}
+
+.btn-custom {
+    background-color: var(--brand-tan);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+.btn-custom:hover {
+    background-color: #b39e71;
+    color: white;
+}
+
+.room-card {
+    border: 1px solid #eee;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.room-card .card-title {
+    color: var(--brand-dark-blue);
+}
+.room-amenities {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-color-secondary);
+}
+.room-amenities i {
+    color: var(--brand-tan);
+    margin-right: 5px;
+}
+.room-card .price {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--text-color-primary);
+}
+.btn-custom-sm {
+    background-color: var(--brand-tan);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 0;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.btn-custom-sm:hover {
+    background-color: #b39e71;
+    color: white;
+}
+
+
+
+.btn-nav {
+    background-color: var(--brand-tan);
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-nav:hover {
+    background-color: #b39e71;
+    color: white;
+}
+
+/* FOOTER */
+.site-footer {
+    background-color: var(--brand-dark-blue);
+    color: #f0f0f0;
+    padding: 6rem 0 3rem 0; 
+    margin-top: -30px; 
+    /* ისარი */
+    clip-path: polygon(0% 30px, 49% 30px, 50% 0, 51% 30px, 100% 30px, 100% 100%, 0% 100%);
+}
+.footer-logo {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+}
+.site-footer p {
+    color: #ccc;
+}
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+.footer-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-links a:hover {
+    color: var(--brand-tan);
+}
+.social-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.social-links a:hover {
+    color: var(--brand-tan);
+}
+.social-links i {
+    margin-right: 5px;
+}
+.site-footer .form-control {
+    background-color: transparent;
+    border: 1px solid #556288;
+    color: white;
+    border-radius: 0;
+}
+.site-footer .form-control::placeholder {
+    color: #aaa;
+}
+.site-footer .form-control:focus {
+    background-color: transparent;
+    border-color: var(--brand-tan);
+    box-shadow: none;
+    color: white;
+}
+.btn-subscribe {
+    background-color: var(--brand-tan);
+    color: white;
+    border-radius: 0;
+    padding: 0 25px;
+}
+.btn-subscribe:hover {
+    background-color: #b39e71;
+}
